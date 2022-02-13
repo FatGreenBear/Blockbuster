@@ -1,0 +1,1579 @@
+:root {
+  --yellow: #fbbc04;
+  --blue: #001a3b;
+
+  --fontone: p22-underground-sc, sans-serif;
+}
+
+.title {
+  color: var(--yellow);
+  background-color: var(--blue);
+  text-align: center;
+  font-family: var(--fontone);
+  font-weight: 300;
+  font-style: normal;
+  padding: 10px 5px;
+  font-size: 300%;
+}
+
+.navbar {
+  width: 100%;
+  overflow: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: static;
+}
+
+li {
+  float: left;
+  display: inline;
+  font-family: var(--fontone);
+  font-weight: 300;
+  font-style: normal;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  /*background-color: #001a3b;*/
+  color: var(--yellow);
+  margin: 0px 25px 0px 25px;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  /*background-color: var(--yellow);*/
+  /*color: var(--blue);*/
+  font-family: var(--fontone);
+  font-weight: 900;
+  font-style: normal;
+  border-radius: 0px;
+  /*background: var(--yellow);*/
+  /*box-shadow: inset -11px 11px 16px #c69503, inset 11px -11px 16px #ffe305;*/
+  border-radius: 8px;
+  background-color: linear-gradient(transparent,#fbbc04);
+}
+
+body {
+  background-color: var(--blue);
+}
+
+main {
+  position: relative;
+  justify-content: center;
+}
+
+.newpopular {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.newpopular .switchLeft,
+.newpopular .switchRight {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.newpopular .switchLeft {
+  position: absolute;
+  left: -25px;
+}
+
+.newpopular .switchRight {
+  position: absolute;
+  right: -25px;
+}
+
+.newpopularbox {
+  height: 250px;
+ 
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 14px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.newpopularbox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  border-radius: 25px;
+
+}
+
+.newpopularbox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+  border-radius: 25px;
+}
+
+.newpopulartitle {
+  color: var(--yellow);
+  font-family: var(--fontone);
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.films {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.films .switchLeft3,
+.films .switchRight3 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.films .switchLeft3 {
+  position: absolute;
+  left: -25px;
+}
+
+.films .switchRight3 {
+  position: absolute;
+  right: -25px;
+}
+
+.filmsbox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.filmsbox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.filmsbox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.filmstitle {
+  color: var(--yellow);
+  font-family: var(--fontone);
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.series {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.series .switchLeft2,
+.series .switchRight2 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.series .switchLeft2 {
+  position: absolute;
+  left: -25px;
+}
+
+.series .switchRight2 {
+  position: absolute;
+  right: -25px;
+}
+
+.seriesbox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.seriesbox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.seriesbox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.seriestitle {
+  color: var(--yellow);
+  font-family: var(--fontone);
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.action {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.action .switchLeft4,
+.action .switchRight4 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.action .switchLeft4 {
+  position: absolute;
+  left: -25px;
+}
+
+.action .switchRight4 {
+  position: absolute;
+  right: -25px;
+}
+
+.actionbox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.actionbox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.actionbox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.genretitle {
+  color: var(--yellow);
+  font-family: var(--fontone);
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.adventure {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.adventure .switchLeft5,
+.adventure .switchRight5 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.adventure .switchLeft5 {
+  position: absolute;
+  left: -25px;
+}
+
+.adventure .switchRight5 {
+  position: absolute;
+  right: -25px;
+}
+
+.adventurebox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.adventurebox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.adventurebox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.animation {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.animation .switchLeft6,
+.animation .switchRight6 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.animation .switchLeft6 {
+  position: absolute;
+  left: -25px;
+}
+
+.animation .switchRight6 {
+  position: absolute;
+  right: -25px;
+}
+
+.animationbox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.animationbox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.animationbox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.comedy {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.comedy .switchLeft7,
+.comedy .switchRight7 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.comedy .switchLeft7 {
+  position: absolute;
+  left: -25px;
+}
+
+.comedy .switchRight7 {
+  position: absolute;
+  right: -25px;
+}
+
+.comedybox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.comedybox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.comedybox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.crime {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.crime .switchLeft8,
+.crime .switchRight8 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.crime .switchLeft8 {
+  position: absolute;
+  left: -25px;
+}
+
+.crime .switchRight8 {
+  position: absolute;
+  right: -25px;
+}
+
+.crimebox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.crimebox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.crimebox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.documentary {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.documentary .switchLeft9,
+.documentary .switchRight9 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.documentary .switchLeft9 {
+  position: absolute;
+  left: -25px;
+}
+
+.documentary .switchRight9 {
+  position: absolute;
+  right: -25px;
+}
+
+.documentarybox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.documentarybox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.documentarybox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.drama {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.drama .switchLeft10,
+.drama .switchRight10 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.drama .switchLeft10 {
+  position: absolute;
+  left: -25px;
+}
+
+.drama .switchRight10 {
+  position: absolute;
+  right: -25px;
+}
+
+.dramabox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dramabox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.dramabox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.family {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.family .switchLeft11,
+.family .switchRight11 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.family .switchLeft11 {
+  position: absolute;
+  left: -25px;
+}
+
+.family .switchRight11 {
+  position: absolute;
+  right: -25px;
+}
+
+.familybox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.familybox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.familybox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.fantasy {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.fantasy .switchLeft12,
+.fantasy .switchRight12 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.fantasy .switchLeft12 {
+  position: absolute;
+  left: -25px;
+}
+
+.fantasy .switchRight12 {
+  position: absolute;
+  right: -25px;
+}
+
+.fantasybox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.fantasybox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.fantasybox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.history {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.history .switchLeft13,
+.history .switchRight13 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.history .switchLeft13 {
+  position: absolute;
+  left: -25px;
+}
+
+.history .switchRight13 {
+  position: absolute;
+  right: -25px;
+}
+
+.historybox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.historybox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.historybox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.horror {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.horror .switchLeft14,
+.horror .switchRight14 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.horror .switchLeft14 {
+  position: absolute;
+  left: -25px;
+}
+
+.horror .switchRight14 {
+  position: absolute;
+  right: -25px;
+}
+
+.horrorbox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.horrorbox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.horrorbox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.music {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.music .switchLeft15,
+.music .switchRight15 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.music .switchLeft15 {
+  position: absolute;
+  left: -25px;
+}
+
+.music .switchRight15 {
+  position: absolute;
+  right: -25px;
+}
+
+.musicbox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.musicbox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.musicbox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.mystery {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.mystery .switchLeft16,
+.mystery .switchRight16 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.mystery .switchLeft16 {
+  position: absolute;
+  left: -25px;
+}
+
+.mystery .switchRight16 {
+  position: absolute;
+  right: -25px;
+}
+
+.mysterybox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mysterybox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.mysterybox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.romance {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.romance .switchLeft17,
+.romance .switchRight17 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.romance .switchLeft17 {
+  position: absolute;
+  left: -25px;
+}
+
+.romance .switchRight17 {
+  position: absolute;
+  right: -25px;
+}
+
+.romancebox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.romancebox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.romancebox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.sci-fi {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.sci-fi .switchLeft18,
+.sci-fi .switchRight18 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.sci-fi .switchLeft18 {
+  position: absolute;
+  left: -25px;
+}
+
+.sci-fi .switchRight18 {
+  position: absolute;
+  right: -25px;
+}
+
+.sci-fibox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sci-fibox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.sci-fibox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.thriller {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.thriller .switchLeft19,
+.thriller .switchRight19 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.thriller .switchLeft19 {
+  position: absolute;
+  left: -25px;
+}
+
+.thriller .switchRight19 {
+  position: absolute;
+  right: -25px;
+}
+
+.thrillerbox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.thrillerbox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.thrillerbox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.war {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.war .switchLeft20,
+.war .switchRight20 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.war .switchLeft20 {
+  position: absolute;
+  left: -25px;
+}
+
+.war .switchRight20 {
+  position: absolute;
+  right: -25px;
+}
+
+.warbox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.warbox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.warbox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.western {
+  height: 250px;
+  position: relative;
+  justify-content: center;
+}
+
+.western .switchLeft21,
+.western .switchRight21 {
+  color: var(--yellow);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 50px;
+  text-align: center;
+  background-color: none;
+  font-family: var(--fontone);
+  top: 0;
+  z-index: 3;
+  filter: drop-shadow(-3px -3px 2px var(--blue))
+    drop-shadow(5px 5px 5px var(--blue)) drop-shadow(15px 15px 15px var(--blue));
+  position: relative;
+}
+
+.western .switchLeft21 {
+  position: absolute;
+  left: -25px;
+}
+
+.western .switchRight21 {
+  position: absolute;
+  right: -25px;
+}
+
+.westernbox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.westernbox img {
+  min-width: 100;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: var(--yellow);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.westernbox img:hover {
+  transform: scale(1.4);
+  z-index: 3;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  width: 200px;
+  height: 100px;
+  overflow: scroll;
+}
+
+.newpopularflexbox {
+  z-index: 1;
+}
+
+.filmflexbox {
+  z-index: 1;
+}
+
+.seriesflexbox {
+  z-index: 1;
+}
+
+.actionflexbox {
+  z-index: 1;
+}
+
+.adventureflexbox {
+  z-index: 1;
+}
+
+.animationflexbox {
+  z-index: 1;
+}
+
+.comedyflexbox {
+  z-index: 1;
+}
+
+.crimeflexbox {
+  z-index: 1;
+}
+
+.documentaryflexbox {
+  z-index: 1;
+}
+
+.dramaflexbox {
+  z-index: 1;
+}
+
+.familyflexbox {
+  z-index: 1;
+}
+
+.fantasyflexbox {
+  z-index: 1;
+}
+
+.historyflexbox {
+  z-index: 1;
+}
+
+.horrorflexbox {
+  z-index: 1;
+}
+
+.musicflexbox {
+  z-index: 1;
+}
+
+.mysteryflexbox {
+  z-index: 1;
+}
+
+.romanceflexbox {
+  z-index: 1;
+}
+
+.sci-fiflexbox {
+  z-index: 1;
+}
+
+.thrillerflexbox {
+  z-index: 1;
+}
+
+.warflexbox {
+  z-index: 1;
+}
+
+.westernflexbox {
+  z-index: 1;
+}
+
+
+.vertical-scroll::-webkit-scrollbar {
+width: 2em;
+}
+
+::-webkit-scrollbar-track {
+background-color: red;
+}
+
+::-webkit-scrollbar 

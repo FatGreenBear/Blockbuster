@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BlockBuster</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/dla7xwm.css" />
+
+  </head>
+
+  <body>
+    <header>
+      <h1 class="title">BlockBuster</h1>
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#new&popular">New & Popular</a></li>
+        <li><a href="#films">Films</a></li>
+        <li><a href="#series">Series</a></li>
+        <li><a href="mylist">My List</a></li>
+      </ul>
+    </nav>
+
+    <main>
+       
+      <div class="flexbox-container">
+        <div class="newpopularflexbox">
+          <!--new & popular-->
+          <h3 class="newpopulartitle">New & Popular</h3>
+        </div>
+        <div class="newpopular">
+          <div class="newpopularbox"></div>
+
+          <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"><</a>
+          <a class="switchRight sliderButton" onclick="sliderScrollRight()"
+            >></a
+          >
+        </div>
+
+
+        <div class="filmsflexbox">
+          <!--films-->
+          <h3 class="filmstitle">Films</h3>
+        </div>
+        <div class="films">
+          <div class="filmsbox"></div>
+
+          <a class="switchLeft3 sliderButton3" onclick="sliderScrollLeft3()"
+            ><</a
+          >
+          <a class="switchRight3 sliderButton3" onclick="sliderScrollRight3()"
+            >></a
+          >
+        </div>
+      </div>
+
+        <div class="seriesflexbox">
+          <!--series-->
+          <h3 class="seriestitle">Series</h3>
+        </div>
+        <div class="series">
+          <div class="seriesbox"></div>
+
+          <a class="switchLeft2 sliderButton2" onclick="sliderScrollLeft2()"
+            ><</a
+          >
+          <a class="switchRight2 sliderButton2" onclick="sliderScrollRight2()"
+            >></a
+          >
+        </div>
+      </div>
+
+      <div class="actionflexbox">
+          <!--action-->
+          <h3 class="genretitle">Action</h3>
+        </div>
+        <div class="action">
+          <div class="actionbox"></div>
+
+          <a class="switchLeft4 sliderButton4" onclick="sliderScrollLeft4()"
+            ><</a
+          >
+          <a class="switchRight4 sliderButton4" onclick="sliderScrollRight4()"
+            >></a
+          >
+        </div>
+      </div>
+
+      <div class="adventureflexbox">
+        <!--adventure-->
+        <h3 class="genretitle">Adventure</h3>
+      </div>
+      <div class="adventure">
+        <div class="adventurebox"></div>
+
+        <a class="switchLeft5 sliderButton5" onclick="sliderScrollLeft5()"
+          ><</a
+        >
+        <a class="switchRight5 sliderButton5" onclick="sliderScrollRight5()"
+          >></a
+        >
+      </div>
+    </div>
+
+    <div class="animationflexbox">
+      <!--animation-->
+      <h3 class="genretitle">Animation</h3>
+    </div>
+    <div class="animation">
+      <div class="animationbox"></div>
+
+      <a class="switchLeft6 sliderButton6" onclick="sliderScrollLeft6()"
+        ><</a
+      >
+      <a class="switchRight6 sliderButton6" onclick="sliderScrollRight6()"
+        >></a
+      >
+    </div>
+  </div>
+
+
+  <div class="comedyflexbox">
+    <!--comedy-->
+    <h3 class="genretitle">Comedy</h3>
+  </div>
+  <div class="comedy">
+    <div class="comedybox"></div>
+
+    <a class="switchLeft7 sliderButton7" onclick="sliderScrollLeft7()"
+      ><</a
+    >
+    <a class="switchRight7 sliderButton7" onclick="sliderScrollRight7()"
+      >></a
+    >
+  </div>
+</div>
+
+<div class="crimeflexbox">
+  <!--crime-->
+  <h3 class="genretitle">Crime</h3>
+</div>
+<div class="crime">
+  <div class="crimebox"></div>
+
+  <a class="switchLeft8 sliderButton8" onclick="sliderScrollLeft8()"
+    ><</a
+  >
+  <a class="switchRight8 sliderButton8" onclick="sliderScrollRight8()"
+    >></a
+  >
+</div>
+</div>
+
+<div class="documentaryflexbox">
+  <!--documentary-->
+  <h3 class="genretitle">Documentary</h3>
+</div>
+<div class="documentary">
+  <div class="documentarybox"></div>
+
+  <a class="switchLeft9 sliderButton9" onclick="sliderScrollLeft9()"
+    ><</a
+  >
+  <a class="switchRight9 sliderButton9" onclick="sliderScrollRight9()"
+    >></a
+  >
+</div>
+</div>
+
+<div class="dramaflexbox">
+  <!--drama-->
+  <h3 class="genretitle">Drama</h3>
+</div>
+<div class="drama">
+  <div class="dramabox"></div>
+
+  <a class="switchLeft10 sliderButton10" onclick="sliderScrollLeft10()"
+    ><</a
+  >
+  <a class="switchRight10 sliderButton10" onclick="sliderScrollRight10()"
+    >></a
+  >
+</div>
+</div>
+
+<div class="familyflexbox">
+  <!--family-->
+  <h3 class="genretitle">Family</h3>
+</div>
+<div class="family">
+  <div class="familybox"></div>
+
+  <a class="switchLeft11 sliderButton11" onclick="sliderScrollLeft11()"
+    ><</a
+  >
+  <a class="switchRight11 sliderButton11" onclick="sliderScrollRight11()"
+    >></a
+  >
+</div>
+</div>
+
+
+<div class="fantasyflexbox">
+  <!--fantasy-->
+  <h3 class="genretitle">Fantasy</h3>
+</div>
+<div class="fantasy">
+  <div class="fantasybox"></div>
+
+  <a class="switchLeft12 sliderButton12" onclick="sliderScrollLeft12()"
+    ><</a
+  >
+  <a class="switchRight12 sliderButton12" onclick="sliderScrollRight12()"
+    >></a
+  >
+</div>
+</div>
+
+
+<div class="historyflexbox">
+  <!--history-->
+  <h3 class="genretitle">History</h3>
+</div>
+<div class="history">
+  <div class="historybox"></div>
+
+  <a class="switchLeft13 sliderButton13" onclick="sliderScrollLeft13()"
+    ><</a
+  >
+  <a class="switchRight13 sliderButton13" onclick="sliderScrollRight13()"
+    >></a
+  >
+</div>
+</div>
+
+
+<div class="horrorflexbox">
+  <!--horror-->
+  <h3 class="genretitle">Horror</h3>
+</div>
+<div class="horror">
+  <div class="horrorbox"></div>
+
+  <a class="switchLeft14 sliderButton14" onclick="sliderScrollLeft14()"
+    ><</a
+  >
+  <a class="switchRight14 sliderButton14" onclick="sliderScrollRight14()"
+    >></a
+  >
+</div>
+</div>
+
+<div class="musicflexbox">
+  <!--music-->
+  <h3 class="genretitle">Music</h3>
+</div>
+<div class="music">
+  <div class="musicbox"></div>
+
+  <a class="switchLeft15 sliderButton15" onclick="sliderScrollLeft15()"
+    ><</a
+  >
+  <a class="switchRight15 sliderButton15" onclick="sliderScrollRight15()"
+    >></a
+  >
+</div>
+</div>
+
+<div class="mysteryflexbox">
+  <!--mystery-->
+  <h3 class="genretitle">Mystery</h3>
+</div>
+<div class="mystery">
+  <div class="mysterybox"></div>
+
+  <a class="switchLeft16 sliderButton16" onclick="sliderScrollLeft16()"
+    ><</a
+  >
+  <a class="switchRight16 sliderButton16" onclick="sliderScrollRight16()"
+    >></a
+  >
+</div>
+</div>
+
+<div class="romanceflexbox">
+  <!--romance-->
+  <h3 class="genretitle">Romance</h3>
+</div>
+<div class="romance">
+  <div class="romancebox"></div>
+
+  <a class="switchLeft17 sliderButton17" onclick="sliderScrollLeft17()"
+    ><</a
+  >
+  <a class="switchRight17 sliderButton17" onclick="sliderScrollRight17()"
+    >></a
+  >
+</div>
+</div>
+
+<div class="sci-fiflexbox">
+  <!--sci-fi-->
+  <h3 class="genretitle">Sci-Fi</h3>
+</div>
+<div class="sci-fi">
+  <div class="sci-fibox"></div>
+
+  <a class="switchLeft18 sliderButton18" onclick="sliderScrollLeft18()"
+    ><</a
+  >
+  <a class="switchRight18 sliderButton18" onclick="sliderScrollRight18()"
+    >></a
+  >
+</div>
+</div>
+
+<div class="thrillerflexbox">
+  <!--thriller-->
+  <h3 class="genretitle">Thriller</h3>
+</div>
+<div class="thriller">
+  <div class="thrillerbox"></div>
+
+  <a class="switchLeft19 sliderButton19" onclick="sliderScrollLeft19()"
+    ><</a
+  >
+  <a class="switchRight19 sliderButton19" onclick="sliderScrollRight19()"
+    >></a
+  >
+</div>
+</div>
+
+<div class="warflexbox">
+  <!--war-->
+  <h3 class="genretitle">War</h3>
+</div>
+<div class="war">
+  <div class="warbox"></div>
+
+  <a class="switchLeft20 sliderButton20" onclick="sliderScrollLeft20()"
+    ><</a
+  >
+  <a class="switchRight20 sliderButton20" onclick="sliderScrollRight20()"
+    >></a
+  >
+</div>
+</div>
+
+<div class="westernflexbox">
+  <!--western-->
+  <h3 class="genretitle">Western</h3>
+</div>
+<div class="western">
+  <div class="westernbox"></div>
+
+  <a class="switchLeft21 sliderButton21" onclick="sliderScrollLeft21()"
+    ><</a
+  >
+  <a class="switchRight21 sliderButton21" onclick="sliderScrollRight21()"
+    >></a
+  >
+</div>
+</div>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.js"></script>
+    <script src="newpopular.js"></script>
+    <script src="series.js"></script>
+    <script src="films.js"></script>
+    <script src="action.js"></script>
+    <script src="adventure.js"></script>
+    <script src="animation.js"></script>
+    <script src="comedy.js"></script>
+    <script src="crime.js"></script>
+    <script src="documentary.js"></script>
+    <script src="drama.js"></script>
+    <script src="family.js"></script>
+    <script src="fantasy.js"></script>
+    <script src="history.js"></script>
+    <script src="horror.js"></script>
+    <script src="music.js"></script>
+    <script src="mystery.js"></script>
+    <script src="romance.js"></script>
+    <script src="sci-fi.js"></script>
+    <script src="thriller.js"></script>
+    <script src="war.js"></script>
+    <script src="western.js"></script>
+  </body>
+</html>
